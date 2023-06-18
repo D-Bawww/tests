@@ -1,0 +1,29 @@
+﻿<Window x:Class="WpfApp2.PopWindow"
+        xmlns="http://schemas.microsoft.com/winfx/2006/xaml/presentation"
+        xmlns:x="http://schemas.microsoft.com/winfx/2006/xaml"
+        xmlns:d="http://schemas.microsoft.com/expression/blend/2008"
+        xmlns:mc="http://schemas.openxmlformats.org/markup-compatibility/2006"
+        xmlns:local="clr-namespace:WpfApp2"
+        mc:Ignorable="d"
+        Title="Аренда транспорта" x:Name="wind" Height="450" Width="700" Background="Azure">
+    <Grid Margin="5,5,5,5">
+        <Grid.RowDefinitions>
+            <RowDefinition Height="12*"/>
+            <RowDefinition Height="205*"/>
+        </Grid.RowDefinitions>
+        <TextBlock x:Name="text" Text="Арендодатели" Background="WhiteSmoke" TextAlignment="Center" Foreground="Black" FontSize="14"/>
+        <Border BorderThickness="1" BorderBrush="Black"/>
+        <ListBox x:Name="list" BorderBrush="Black" Grid.Row="1" Visibility="Collapsed"/>
+
+        <DataGrid x:Name="grid" Grid.Row="1" Background="White" BorderBrush="Black" GridLinesVisibility="Vertical" VerticalGridLinesBrush="Black" IsReadOnly="True" AutoGenerateColumns="False">
+            <DataGrid.Columns>
+                <DataGridTextColumn Header="Номер телефона" Binding="{Binding Path=phone_number}" Foreground="Black" Width="1*" />
+                <DataGridTextColumn Header="Марка" Binding="{Binding Path=mark}" Foreground="Black" Width="1*"/>
+                <DataGridTextColumn Header="Модель" Binding="{Binding Path=model}" Foreground="Black" Width="1*"/>
+                <DataGridTextColumn Header="Год" Binding="{Binding Path=yy}" Foreground="Black" Width="1*" />
+                <DataGridTextColumn Header="Стоимость аренды" Binding="{Binding Path=price}" Foreground="Black" Width="1*"/>
+                <DataGridTextColumn Header="Срок аренды" Binding="{Binding Path=period}" Foreground="Black" Width="1*"/>
+            </DataGrid.Columns>
+        </DataGrid>
+    </Grid>
+</Window>

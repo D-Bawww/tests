@@ -1,0 +1,12 @@
+11
+Наземный  5  2012  Toyota  Land Cruiser
+Наземный  2  2012  BMW  I8
+Наземный  5  2021  Nissan  Patrol
+Наземный  2  2015  Porshe  Panamera
+Воздушный  3  2006  Robinson  R44
+Наземный  5  2021  UAZ  Патриот
+Водный  15  2008  Marquis  55LS
+Водный  6  2021  Феникс  550 HT
+Воздушный  3  2018  Cessna  182
+Водный  8  2000  Farline  Squadron 65
+Водный  6  2006  Striper  2901
